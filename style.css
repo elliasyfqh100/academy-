@@ -1,0 +1,509 @@
+/* General Reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full height */
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Form Styling */
+form {
+    background-color: #f5c7c7;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: bold;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Buttons Styling */
+button {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+}
+
+button.btn-primary {
+    background-color: #238dff;
+    border: none;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Links in Forms */
+p.text-center a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Visibility Handling */
+.d-none {
+    display: none !important;
+}
+
+.header-custom {
+    background-color: #F7C9D6; /* Soft Pink */
+}
+
+.text-bold {
+    font-weight: bold;
+    color: black;
+}
+
+/* Header and Footer Styling */
+.header-custom, .footer-custom {
+    background-color: #F7C9D6; /* Soft Pink */
+    color: black; /* Black text */
+}
+
+/* Header Text Styling */
+.header-custom h4, .footer-custom p {
+    font-weight: bold; /* Bold font */
+}
+
+/* Ensure that text in header and footer is black and bold */
+.header-custom h4 {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Header Styling */
+header {
+    background-color: #F7C9D6;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px; /* Consistent height for header */
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 80px; /* Adjust based on the header height */
+    left: 0;
+    height: 80px; /* Consistent height for navbar */
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Vertically center the links */
+    justify-content: center; /* Horizontally center the links */
+    z-index: 1000;
+}
+
+nav .nav-link {
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+nav .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.nav-item .nav-link.text-dark {
+    font-weight: 500;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px; /* Ensure the content does not overlap with the navbar */
+    margin-top: 120px; /* Offset for the fixed header */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.footer-custom p {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #F7C9D6; /* Soft Pink */
+    color: black; /* Black text */
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 80px; /* Consistent height for footer */
+    z-index: 1000;
+}
+
+/* Social Icons Styling */
+.social-icons a {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #17a2b8;
+}
+
+/* Grid Layout */
+.row {
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Ensure no content is hidden behind footer */
+body {
+    padding-bottom: 100px; /* Space for the footer */
+}
+
+/* Avoid page scrolling */
+html, body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Body Styling */
+body {
+    padding-bottom: 100px; /* Ensure no content is hidden behind footer */
+}
+
+/* Avoid page scrolling */
+html, body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Box Styling */
+.profile-box {
+    border: 2px solid #e0e0e0; /* Light grey border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    margin-bottom: 20px;
+}
+
+/* Profile Info Styling */
+.profile-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.profile-info li strong {
+    color: #333;
+}
+
+/* Title Styles for Dashboard */
+#dashboardPage .display-4 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#dashboardPage h3 {
+    font-weight: 300;
+    color: #6c757d;
+}
+
+/* Profile Card Image Styling */
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Profile Details */
+.profile-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.profile-details:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#profilePage {
+    display: none;
+}
+
+#profilePage .profile-details img {
+    border-radius: 50%;
+    border: 4px solid #8cf0c4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-details h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2e3a59;
+    margin-bottom: 20px;
+}
+
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-details ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.profile-details ul li strong {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.btn-secondary {
+    background-color: #8cf0c4;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #6bcfa7;
+}
+
+/* Profile Box Styling */
+.profile-box {
+    border: 2px solid #e0e0e0; /* Light grey border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    margin-bottom: 20px;
+}
+
+/* Profile Info Styling */
+.profile-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.profile-info li strong {
+    color: #333;
+}
+
+/* Profile Box Styling */
+.profile-box {
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.profile-box .img-fluid {
+    margin-bottom: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.profile-box .img-fluid:hover {
+    transform: scale(1.1);
+}
+
+/* Individual Profile Styles */
+.ain-profile {
+    background-color: #e3f2fd;
+    border: 2px solid #42a5f5;
+}
+
+.aliyah-profile {
+    background-color: #f1f8e9;
+    border: 2px solid #8bc34a;
+}
+
+.mira-profile {
+    background-color: #fce4ec;
+    border: 2px solid #ec407a;
+}
+
+.puteri-profile {
+    background-color: #fff8e1;
+    border: 2px solid #ffeb3b;
+}
+
+.qas-profile {
+    background-color: #e8f5e9;
+    border: 2px solid #81c784;
+}
+
+.zawana-profile {
+    background-color: #f3e5f5;
+    border: 2px solid #9c27b0;
+}
+
+/* Profile Info Styling */
+.profile-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.profile-box li {
+    margin-bottom: 12px;
+}
+
+.profile-box li strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Heading Styling */
+.profile-box h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Back Button Styling */
+.profile-box .btn {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #424242;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.profile-box .btn:hover {
+    background-color: #616161;
+}
+
+/* Profile Box Transitions */
+.profile-box {
+    transition: all 0.3s ease;
+}
+
+.profile-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Layout for Mobile Devices */
+@media (max-width: 767px) {
+    .main-content {
+        margin-left: 0;
+        margin-top: 180px; /* Adjust for smaller screens */
+    }
+    nav {
+        height: auto; /* Make navbar stack vertically on mobile */
+    }
+    footer {
+        height: auto; /* Adjust footer size for mobile */
+    }
+}

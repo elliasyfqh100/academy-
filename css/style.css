@@ -1,0 +1,272 @@
+/* General Reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+.form-label {
+    font-weight: bold;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Buttons Styling */
+button {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+button.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+button.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Links in Forms */
+p.text-center a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* Visibility Handling */
+.d-none {
+    display: none !important;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: white;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header .site-title h4 {
+    margin-bottom: 0;
+}
+
+nav .nav-link {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+nav .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+.nav-item .nav-link.text-dark {
+    font-weight: 500;
+}
+
+.nav-item .nav-link.text-danger {
+    font-weight: 500;
+}
+
+#userAvatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Title Styles for Dashboard */
+#dashboardPage .display-4 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#dashboardPage h3 {
+    font-weight: 300;
+    color: #6c757d;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* Profile Card Image Styling */
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Profile Details */
+.profile-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.profile-details:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#profilePage {
+    display: none;
+}
+
+#profilePage .profile-details img {
+    border-radius: 50%;
+    border: 4px solid #8cf0c4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-details h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2e3a59;
+    margin-bottom: 20px;
+}
+
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-details ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.profile-details ul li strong {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.btn-secondary {
+    background-color: #8cf0c4;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #6bcfa7;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Social Icons Styling */
+.social-icons a {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #17a2b8;
+}
+
+/* Grid Layout */
+.row {
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
